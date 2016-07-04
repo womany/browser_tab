@@ -1,0 +1,41 @@
+body, html {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	min-height: 100vh;
+	padding: 0;
+}
+
+#header {
+	background: #1A1A1A;
+	padding: 10px 3rem;
+
+	h1 {
+		height: 40px;
+		margin: 0;
+
+		a {
+			color: #fff;
+			display: inline-block;
+
+			img {
+				height: 40px;
+			}
+		}
+	}
+}
+
+#footer {
+	background: #DDDDDD;
+	height: 20px;
+	padding: .5rem;
+	text-align: center;
+
+	.heart {
+		color: #E50012;
+	}
+}
+
+#main {
+	flex: 1;
+}
