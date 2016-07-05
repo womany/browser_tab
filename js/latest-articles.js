@@ -6,7 +6,7 @@ fetch("https://api.womany.net/articles/list")
 		let article_limit_num = 6;
 		for(var i = 0; i < article_limit_num ; ++i ) {
 			content += `<li>
-			<a href="https://womany.net/read/article/${articles[i].id}?ref=ext-chrome-"
+			<a href="https://womany.net/read/article/${articles[i].id}?ref=ext-chrome-newtab"
 				style="background-image:url('https://${articles[i].featured_image_thumb}')">
 				<h3>${articles[i].title}</h3>
 			</a></li>`
