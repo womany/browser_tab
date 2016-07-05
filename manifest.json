@@ -5,12 +5,19 @@
 	"incognito": "split",
 	"author": "Womany",
 
+	"icons": {
+		"48": "images/logo.png"
+	},
+
 	"permissions": [
 		"*://api.womany.net/*"
 	],
 
 	"chrome_url_overrides": {
 		"newtab": "index.html"
+	},
+
+	"browser_action": {
 	},
 
 	"manifest_version": 2
