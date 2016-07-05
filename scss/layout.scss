@@ -9,10 +9,14 @@ body, html {
 #header {
 	background: #1A1A1A;
 	padding: 10px 3rem;
+	text-align: center;
 
 	h1 {
+		display: inline-block;
+		float: left;
 		height: 40px;
 		margin: 0;
+		width: 170px;
 
 		a {
 			color: #fff;
@@ -21,6 +25,17 @@ body, html {
 			img {
 				height: 40px;
 			}
+		}
+	}
+	.time {
+		color: #fff;
+		float: right;
+		font-family: 'Open Sans Condensed', sans-serif;
+		font-size: 1rem;
+		span {
+			font-size: 2rem;
+			font-weight: 300;
+			margin-left: .5rem;
 		}
 	}
 }
