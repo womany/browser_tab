@@ -13,5 +13,6 @@ fetch("https://api.womany.net/articles/list")
 		}
 		latest_ul.innerHTML = content;
 	})
-	.catch( err => {console.log(err)})
-
+	.catch( err => {
+		document.querySelector("#latest-articles > ul").innerHTML = "<li class='error'>因為網路問題，我們沒辦法擷取到新文章…</li>"
+	})

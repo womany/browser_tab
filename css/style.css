@@ -68,5 +68,29 @@ body, html {
         transition-duration: .5s; }
         #latest-articles ul li a h3:hover {
           transform: scale(0.95); }
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+    #latest-articles ul li.pending {
+      color: #555;
+      font-size: 1.5rem;
+      padding: 7rem; }
+      #latest-articles ul li.pending::after {
+        animation: rotate 1.5s infinite steps(12, end);
+        background: url("../images/logo.png");
+        background-size: cover;
+        content: "";
+        display: inline-block;
+        height: 30px;
+        position: relative;
+        top: 3px;
+        vertical-align: top;
+        width: 30px; }
+    #latest-articles ul li.error {
+      color: #555;
+      font-size: 3rem;
+      margin: 2rem;
+      width: 75%; }
 
 /*# sourceMappingURL=style.css.map */
