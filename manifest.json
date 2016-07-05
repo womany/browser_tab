@@ -5,7 +5,9 @@
 	"incognito": "split",
 	"author": "Womany",
 
-	"permissions":[],
+	"permissions": [
+		"*://api.womany.net/*"
+	],
 
 	"chrome_url_overrides": {
 		"newtab": "index.html"
