@@ -51,6 +51,23 @@ body, html {
       border-bottom: 3px solid #e50012;
       display: inline-block; }
 
+#search {
+  padding: 0 0 1.5rem;
+  text-align: center; }
+  #search input[type="text"] {
+    font-size: 1.5rem;
+    padding: .25rem;
+    outline: none;
+    width: 50%; }
+  #search input[type="submit"] {
+    background: #fff;
+    border: 1px solid #aaa;
+    font-size: 1.1rem;
+    padding: .3rem;
+    outline: none;
+    vertical-align: top;
+    width: 7%; }
+
 #latest-articles ul {
   list-style-type: none;
   padding: 0;
@@ -79,19 +96,20 @@ body, html {
         box-sizing: border-box;
         background: rgba(0, 0, 0, 0.5);
         font-size: 1rem;
-        height: 13rem;
+        height: 10rem;
         line-height: 2rem;
         margin: 0;
-        padding: 8rem 2rem 2rem;
+        padding: 4rem 1rem 2rem;
         transition-duration: .5s; }
         #latest-articles ul li a h3:hover {
           transform: scale(0.95); }
-        @media screen and (max-width: 1125px) {
-          #latest-articles ul li a h3 {
-            padding: 4rem 1rem 6rem; } }
         @media screen and (max-width: 769px) {
           #latest-articles ul li a h3 {
             padding: 5rem 1rem; } }
+        @media screen and (min-width: 1900px) {
+          #latest-articles ul li a h3 {
+            height: 13rem;
+            padding: 8rem 2rem 2rem; } }
 @keyframes rotate {
   100% {
     -webkit-transform: rotate(360deg);
