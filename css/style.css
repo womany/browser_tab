@@ -46,6 +46,10 @@ body, html {
     overflow: hidden;
     vertical-align: top;
     width: 30%; }
+    @media screen and (max-width: 769px) {
+      #latest-articles ul li {
+        display: block;
+        width: 100%; } }
     #latest-articles ul li a {
       background-size: cover;
       color: #fff;
@@ -68,6 +72,12 @@ body, html {
         transition-duration: .5s; }
         #latest-articles ul li a h3:hover {
           transform: scale(0.95); }
+        @media screen and (max-width: 1125px) {
+          #latest-articles ul li a h3 {
+            padding: 4rem 1rem 6rem; } }
+        @media screen and (max-width: 769px) {
+          #latest-articles ul li a h3 {
+            padding: 5rem 1rem; } }
 @keyframes rotate {
   100% {
     -webkit-transform: rotate(360deg);
