@@ -37,16 +37,37 @@
 			z-index: 525;
 
 			> a {
-				border-bottom: 1px solid #aaa;
 				color: #343434;
 				display: block;
 				font-size: 1rem;
-				padding: .3rem;
+				padding: .3rem .3rem .4rem;
 				text-decoration: none;
 
 				&:hover, &:focus {
 					background: #eee;
 					outline: none;
+				}
+
+				&:last-child {
+					border-bottom: 1px solid #aaa;
+				}
+
+				&::before {
+					content: "";
+					display: inline-block;
+					height: 1rem;
+					margin-right: .25rem;
+					vertical-align: sub;
+					width: 1rem;
+				}
+				&.google:before {
+					background: url("../images/search.svg") no-repeat 0 0;
+					background-size: 100%;
+				}
+
+				&.womany:before {
+					background: url("../images/logo.png") no-repeat 0 0;
+					background-size: 100%;
 				}
 			}
 		}

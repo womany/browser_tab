@@ -81,15 +81,29 @@ body, html {
       width: 100%;
       z-index: 525; }
       #search #search_suggestion > div > a {
-        border-bottom: 1px solid #aaa;
         color: #343434;
         display: block;
         font-size: 1rem;
-        padding: .3rem;
+        padding: .3rem .3rem .4rem;
         text-decoration: none; }
         #search #search_suggestion > div > a:hover, #search #search_suggestion > div > a:focus {
           background: #eee;
           outline: none; }
+        #search #search_suggestion > div > a:last-child {
+          border-bottom: 1px solid #aaa; }
+        #search #search_suggestion > div > a::before {
+          content: "";
+          display: inline-block;
+          height: 1rem;
+          margin-right: .25rem;
+          vertical-align: sub;
+          width: 1rem; }
+        #search #search_suggestion > div > a.google:before {
+          background: url("../images/search.svg") no-repeat 0 0;
+          background-size: 100%; }
+        #search #search_suggestion > div > a.womany:before {
+          background: url("../images/logo.png") no-repeat 0 0;
+          background-size: 100%; }
 
 #latest-articles ul {
   list-style-type: none;
