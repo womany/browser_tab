@@ -2,7 +2,7 @@ window.onload = () => {
 
 	// clock
 	var timeUpdate = () =>
-		document.querySelector(".time span").innerHTML = moment().format("M/D h:mm");
+		document.querySelector(".time span").innerHTML = moment().format("M/D HH:mm");
 	timeUpdate();
 	window.setInterval( timeUpdate, 1000);
 
