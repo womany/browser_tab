@@ -21,6 +21,36 @@
 		vertical-align: top;
 		width: 7%;
 	}
+	#search_suggestion {
+		margin: 0 auto;
+		position: relative;
+		left: -3.5%;
+		text-align: left;
+		width: 50%;
+
+		> div {
+			background: #fff;
+			border-left: 1px solid #aaa;
+			border-right: 1px solid #aaa;
+			position: absolute;
+			width: 100%;
+			z-index: 525;
+
+			> a {
+				border-bottom: 1px solid #aaa;
+				color: #343434;
+				display: block;
+				font-size: 1rem;
+				padding: .3rem;
+				text-decoration: none;
+
+				&:hover, &:focus {
+					background: #eee;
+					outline: none;
+				}
+			}
+		}
+	}
 }
 
 #latest-articles ul {
