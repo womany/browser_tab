@@ -5,18 +5,31 @@
 	padding: 0 0 1.5rem;
 	text-align: center;
 
+	input {
+		-webkit-appearance: none;
+		-webkit-border-radius: 0;
+	}
+
 	input[type="text"] {
-		font-size: 1.5rem;
-		padding: .25rem;
+		box-sizing: border-box;
+		border: 1px solid #aaa;
+		font-size: 25px;
+		height: 35px;
+		padding: 3px;
 		outline: none;
+		vertical-align: top;
 		width: 50%;
 	}
 
 	input[type="submit"] {
+		box-sizing: border-box;
 		background: #fff;
 		border: 1px solid #aaa;
-		font-size: 1.1rem;
-		padding: .3rem;
+		font-size: 25px;
+		line-height: 35px;
+		height: 35px;
+		min-height: 30px;
+		padding: 3px;
 		outline: none;
 		vertical-align: top;
 		width: 7%;
