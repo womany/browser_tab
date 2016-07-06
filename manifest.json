@@ -10,7 +10,8 @@
 	},
 
 	"permissions": [
-		"*://api.womany.net/*"
+		"*://api.womany.net/*",
+		"http://google.com.tw/complete/*"
 	],
 
 	"chrome_url_overrides": {

@@ -67,6 +67,29 @@ body, html {
     outline: none;
     vertical-align: top;
     width: 7%; }
+  #search #search_suggestion {
+    margin: 0 auto;
+    position: relative;
+    left: -3.5%;
+    text-align: left;
+    width: 50%; }
+    #search #search_suggestion > div {
+      background: #fff;
+      border-left: 1px solid #aaa;
+      border-right: 1px solid #aaa;
+      position: absolute;
+      width: 100%;
+      z-index: 525; }
+      #search #search_suggestion > div > a {
+        border-bottom: 1px solid #aaa;
+        color: #343434;
+        display: block;
+        font-size: 1rem;
+        padding: .3rem;
+        text-decoration: none; }
+        #search #search_suggestion > div > a:hover, #search #search_suggestion > div > a:focus {
+          background: #eee;
+          outline: none; }
 
 #latest-articles ul {
   list-style-type: none;

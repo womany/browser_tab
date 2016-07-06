@@ -9,7 +9,7 @@
 	<link rel=stylesheet type="text/css" href="css/style.css">
 	<script src="js/latest-articles.js" type="text/javascript" charset="utf-8"></script>
 	<script src="vendor/moment-with-locales.min.js" type="text/javascript" charset="utf-8"></script>
-	<script src="js/time.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/init.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
 	<div id="header">
@@ -23,8 +23,11 @@
 	<div id="main">
 		<section>
 			<form action="http://www.google.com.tw/search" method="GET" id="search">
-				<input type="text" name="query" id="query" autofocus />
+				<input type="text" name="query" id="query" autocomplete="off" autofocus />
 				<input type="submit" value="搜尋">
+				<div id="search_suggestion">
+					<div></div>
+				</div>
 			</form>
 		</section>
 		<section id="latest-articles">
