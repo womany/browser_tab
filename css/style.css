@@ -77,9 +77,12 @@ body, html {
       background: #fff;
       border-left: 1px solid #aaa;
       border-right: 1px solid #aaa;
+      display: block;
       position: absolute;
       width: 100%;
       z-index: 525; }
+      #search #search_suggestion > div.hide {
+        display: none; }
       #search #search_suggestion > div > a {
         color: #343434;
         display: block;

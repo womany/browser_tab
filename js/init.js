@@ -66,6 +66,14 @@ window.onload = () => {
 		}
 	}, false);
 
+	document.addEventListener("click", (e) => {
+		if(document.activeElement === search_bar) {
+			document.querySelector("#search #search_suggestion > div").classList.remove("hide");
+		}
+		else {
+			document.querySelector("#search #search_suggestion > div").classList.add("hide");
+		}
+	});
 }
 
 
