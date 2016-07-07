@@ -29,6 +29,7 @@
 		line-height: 35px;
 		height: 35px;
 		min-height: 30px;
+		min-width: 4rem;
 		padding: 3px;
 		outline: none;
 		vertical-align: top;
@@ -136,13 +137,17 @@
 					transform: scale(0.95);
 				}
 
+				@media screen and (min-width: 1900px) {
+					height: 13rem;
+					padding: 8rem 2rem 2rem;
+				}
+
 				@media screen and (max-width: 769px) {
 					padding: 5rem 1rem;
 				}
 
-				@media screen and (min-width: 1900px) {
-					height: 13rem;
-					padding: 8rem 2rem 2rem;
+				@media screen and (max-width: 500px) {
+					padding: 3rem 1rem;;
 				}
 			}
 		}
