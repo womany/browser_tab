@@ -191,13 +191,15 @@
 	margin: 0 auto;
 	text-align: center;
 
-	div {
-		.author {
-			img {
-				border-radius: 50%;
-				height: 30px;
-				vertical-align: middle;
-			}
+	a {
+		color: #343434;
+		display: block;
+		text-decoration: none;
+
+		.author img {
+			border-radius: 50%;
+			height: 30px;
+			vertical-align: middle;
 		}
 	}
 }

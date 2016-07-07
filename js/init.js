@@ -29,12 +29,12 @@ window.onload = () => {
 			if (!dat) { console.error("data is undefined!"); };
 
 			document.querySelector("#daily_quote").innerHTML = `
-				<div>
+				<a href="https://womany.net/weightofwords?ref=chrome-ext-newtab#${today}">
 					${dat.quote}
 					<span class="author">
-						&dash; ${dat.source} <img src="${dat.image}" />
+						&#8212;&#8212; ${dat.source} <img src="${dat.image}" />
 					</span>
-				</div>
+				</a>
 			`;
 	})
 	.catch( (e) => {

@@ -205,9 +205,13 @@ body, html {
   font-size: 1rem;
   margin: 0 auto;
   text-align: center; }
-  #daily_quote div .author img {
-    border-radius: 50%;
-    height: 30px;
-    vertical-align: middle; }
+  #daily_quote a {
+    color: #343434;
+    display: block;
+    text-decoration: none; }
+    #daily_quote a .author img {
+      border-radius: 50%;
+      height: 30px;
+      vertical-align: middle; }
 
 /*# sourceMappingURL=style.css.map */
