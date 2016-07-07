@@ -1,7 +1,7 @@
 @import "font";
 @import "layout";
 
-#search {
+#search_form {
 	padding: 0 0 1.5rem;
 	text-align: center;
 
@@ -182,6 +182,22 @@
 			font-size: 3rem;
 			margin: 2rem;
 			width: 75%;
+		}
+	}
+}
+
+#daily_quote {
+	font-size: 1rem;
+	margin: 0 auto;
+	text-align: center;
+
+	div {
+		.author {
+			img {
+				border-radius: 50%;
+				height: 30px;
+				vertical-align: middle;
+			}
 		}
 	}
 }

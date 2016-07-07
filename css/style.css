@@ -49,7 +49,7 @@ body, html {
 
 #main {
   flex: 1;
-  padding: 2rem 3rem; }
+  padding: 1.5rem 3rem; }
   #main section .title {
     border-bottom: 1px solid #ddd;
     font-size: 27px;
@@ -59,13 +59,13 @@ body, html {
       border-bottom: 3px solid #e50012;
       display: inline-block; }
 
-#search {
+#search_form {
   padding: 0 0 1.5rem;
   text-align: center; }
-  #search input {
+  #search_form input {
     -webkit-appearance: none;
     -webkit-border-radius: 0; }
-  #search input[type="text"] {
+  #search_form input[type="text"] {
     box-sizing: border-box;
     border: 1px solid #aaa;
     font-size: 25px;
@@ -74,7 +74,7 @@ body, html {
     outline: none;
     vertical-align: top;
     width: 50%; }
-  #search input[type="submit"] {
+  #search_form input[type="submit"] {
     box-sizing: border-box;
     background: #fff;
     border: 1px solid #aaa;
@@ -87,13 +87,13 @@ body, html {
     outline: none;
     vertical-align: top;
     width: 7%; }
-  #search #search_suggestion {
+  #search_form #search_suggestion {
     margin: 0 auto;
     position: relative;
     left: -3.5%;
     text-align: left;
     width: 50%; }
-    #search #search_suggestion > div {
+    #search_form #search_suggestion > div {
       background: #fff;
       border-left: 1px solid #aaa;
       border-right: 1px solid #aaa;
@@ -101,30 +101,30 @@ body, html {
       position: absolute;
       width: 100%;
       z-index: 525; }
-      #search #search_suggestion > div.hide {
+      #search_form #search_suggestion > div.hide {
         display: none; }
-      #search #search_suggestion > div > a {
+      #search_form #search_suggestion > div > a {
         color: #343434;
         display: block;
         font-size: 1rem;
         padding: .3rem .3rem .4rem;
         text-decoration: none; }
-        #search #search_suggestion > div > a:hover, #search #search_suggestion > div > a:focus {
+        #search_form #search_suggestion > div > a:hover, #search_form #search_suggestion > div > a:focus {
           background: #eee;
           outline: none; }
-        #search #search_suggestion > div > a:last-child {
+        #search_form #search_suggestion > div > a:last-child {
           border-bottom: 1px solid #aaa; }
-        #search #search_suggestion > div > a::before {
+        #search_form #search_suggestion > div > a::before {
           content: "";
           display: inline-block;
           height: 1rem;
           margin-right: .25rem;
           vertical-align: sub;
           width: 1rem; }
-        #search #search_suggestion > div > a.google:before {
+        #search_form #search_suggestion > div > a.google:before {
           background: url("../images/search.svg") no-repeat 0 0;
           background-size: 100%; }
-        #search #search_suggestion > div > a.womany:before {
+        #search_form #search_suggestion > div > a.womany:before {
           background: url("../images/logo.png") no-repeat 0 0;
           background-size: 100%; }
 
@@ -197,5 +197,14 @@ body, html {
       font-size: 3rem;
       margin: 2rem;
       width: 75%; }
+
+#daily_quote {
+  font-size: 1rem;
+  margin: 0 auto;
+  text-align: center; }
+  #daily_quote div .author img {
+    border-radius: 50%;
+    height: 30px;
+    vertical-align: middle; }
 
 /*# sourceMappingURL=style.css.map */

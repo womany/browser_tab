@@ -1,12 +1,51 @@
 window.onload = () => {
 
-	// clock
+	//
+	// ============= clock ===============
+	//
+
 	var timeUpdate = () =>
 		document.querySelector(".time span").innerHTML = moment().format("M/D HH:mm");
 	timeUpdate();
 	window.setInterval( timeUpdate, 1000);
 
-	// search suggestion
+	//
+	// =========== daily quote ===========
+	//
+
+
+	var now = new Date();
+	var today = now.toISOString().substr(0, 10);
+	var dateStr = now.getMonth() + 1 + '/' + now.getDate() + ' ';
+	var week = function(){
+		var weekday = ['星期日', '星期一', '星期二', '星期三', '星期四', '星期五', '星期六'];
+		return weekday[now.getDay()];
+	}();
+	dateStr += week;
+
+	fetch('https://api.womany.net/daily_quotes/' + today)
+		.then( res => res.json() )
+		.then( dat => {
+			if (!dat) { console.error("data is undefined!"); };
+
+			document.querySelector("#daily_quote").innerHTML = `
+				<div>
+					${dat.quote}
+					<span class="author">
+						&dash; ${dat.source} <img src="${dat.image}" />
+					</span>
+				</div>
+			`;
+	})
+	.catch( (e) => {
+		console.log(e)
+	});
+
+
+	//
+	// ======= search suggestion =========
+	//
+
 	var search_bar = document.querySelector('#query');
 	var ss_target = document.querySelector("#search_suggestion > div");
 	search_bar.addEventListener('input', () =>
@@ -68,10 +107,10 @@ window.onload = () => {
 
 	document.addEventListener("click", (e) => {
 		if(document.activeElement === search_bar) {
-			document.querySelector("#search #search_suggestion > div").classList.remove("hide");
+			document.querySelector("#search_suggestion > div").classList.remove("hide");
 		}
 		else {
-			document.querySelector("#search #search_suggestion > div").classList.add("hide");
+			document.querySelector("#search_suggestion > div").classList.add("hide");
 		}
 	});
 }
