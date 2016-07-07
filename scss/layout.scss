@@ -1,4 +1,6 @@
 body, html {
+	background: url("../images/bg_color_light.jpg");
+	background-size: cover;
 	display: flex;
 	flex-direction: column;
 	margin: 0;
@@ -30,6 +32,7 @@ body, html {
 
 			img {
 				height: 40px;
+				margin-left: .5rem;
 			}
 		}
 	}

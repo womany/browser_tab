@@ -1,5 +1,7 @@
 @import "https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300";
 body, html {
+  background: url("../images/bg_color_light.jpg");
+  background-size: cover;
   display: flex;
   flex-direction: column;
   margin: 0;
@@ -25,7 +27,8 @@ body, html {
       color: #fff;
       display: inline-block; }
       #header h1 a img {
-        height: 40px; }
+        height: 40px;
+        margin-left: .5rem; }
   #header .time {
     color: #fff;
     float: right;
