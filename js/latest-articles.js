@@ -1,8 +1,8 @@
 var display_item = (tallScreen) => {
 	if(tallScreen)
-		document.querySelectorAll(".big").forEach(e => {e.style.display = "inline-block"});
+		Array(document.querySelectorAll(".big")).forEach(e => {e.style.display = "inline-block"});
 	else
-		document.querySelectorAll(".big").forEach(e => {e.style.display = "none"});
+		Array.from(document.querySelectorAll(".big")).forEach(e => {e.style.display = "none"});
 };
 
 fetch("https://api.womany.net/articles/list")
@@ -29,6 +29,7 @@ fetch("https://api.womany.net/articles/list")
 		display_item(tallScreen);
 	})
 	.catch( err => {
+		console.error(err);
 		document.querySelector("#latest-articles > ul").innerHTML = "<li class='error'>因為網路問題，我們沒辦法擷取到新文章…</li>"
 	})
 

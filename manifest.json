@@ -10,6 +10,7 @@
 	},
 
 	"permissions": [
+		"tabs",
 		"*://api.womany.net/*",
 		"http://google.com.tw/complete/*"
 	],
