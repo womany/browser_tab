@@ -1,6 +1,6 @@
 var display_item = (tallScreen) => {
 	if(tallScreen)
-		Array(document.querySelectorAll(".big")).forEach(e => {e.style.display = "inline-block"});
+		Array.from(document.querySelectorAll(".big")).forEach(e => {e.style.display = "inline-block"});
 	else
 		Array.from(document.querySelectorAll(".big")).forEach(e => {e.style.display = "none"});
 };

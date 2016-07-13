@@ -6,4 +6,5 @@
 ```
 make install  # install dependency
 make css      # watching scss
+make pack     # packaging
 ```
