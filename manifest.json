@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "womany_quote",
+  "version": "1.0",
+
+  "description": "show random quote when open a new tab.",
+
+  "icons": {
+    "48": "icons/border-48.png"
+  },
+
+  "chrome_url_overrides" : {
+    "newtab": "quote.html"
+  },
+
+  "permissions": [
+    "https://api.womany.net/",
+    "storage"
+  ]
+
+}
