@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
-  "name": "womany_quote",
+  "name": "womany_tab",
   "version": "1.0",
 
-  "description": "show random quote when open a new tab.",
+  "description": "show random quote and hot articles when opening a new tab.",
 
   "icons": {
     "48": "icons/border-48.png"
