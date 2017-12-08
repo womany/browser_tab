@@ -1,7 +1,14 @@
 {
+  "applications": {
+    "gecko": {
+      "id": "tab@womany.net",
+      "strict_min_version": "54.0"
+    }
+  },
+
   "manifest_version": 2,
   "name": "womany_tab",
-  "version": "1.0.1",
+  "version": "1.0.2",
 
   "description": "show random quote and hot articles when opening a new tab.",
 
